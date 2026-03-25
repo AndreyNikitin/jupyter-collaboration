@@ -1228,7 +1228,7 @@ No merged PRs
 ## 0.x
 
 The version prior to 1.0.0 were containing only the Jupyter Server backend code and were released under the name
-[`jupyter-server-ydoc`](https://pypi.org/project/jupyter-server-ydoc/).
+[`jupyter-server-ydoc-rename`](https://pypi.org/project/jupyter-server-ydoc-rename/).
 
 ### 0.7.0
 

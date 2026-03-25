@@ -5,8 +5,8 @@ from __future__ import annotations
 
 import nbformat
 import pytest
-from jupyter_server_ydoc.pytest_plugin import rtc_create_SQLite_store_factory
-from jupyter_server_ydoc.stores import SQLiteYStore, TempFileYStore
+from jupyter_server_ydoc_rename.pytest_plugin import rtc_create_SQLite_store_factory
+from jupyter_server_ydoc_rename.stores import SQLiteYStore, TempFileYStore
 
 
 def test_default_settings(jp_serverapp):
@@ -56,7 +56,7 @@ def test_settings_should_change_save_delay(jp_configurable_serverapp):
 
 
 def test_settings_should_change_ystore_class(jp_configurable_serverapp):
-    argv = ["--YDocExtension.ystore_class=jupyter_server_ydoc.stores.TempFileYStore"]
+    argv = ["--YDocExtension.ystore_class=jupyter_server_ydoc_rename.stores.TempFileYStore"]
 
     app = jp_configurable_serverapp(argv=argv)
     settings = app.web_app.settings["jupyter_server_ydoc_config"]
@@ -96,7 +96,7 @@ async def test_squash_after_inactivity_of_from_settings(
 @pytest.mark.parametrize("copy", [True, False])
 async def test_get_document_file(rtc_create_file, jp_serverapp, copy):
     path, content = await rtc_create_file("test.txt", "test", store=True)
-    collaboration = jp_serverapp.web_app.settings["jupyter_server_ydoc"]
+    collaboration = jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"]
     document = await collaboration.get_document(
         path=path, content_type="file", file_format="text", copy=copy
     )
@@ -111,7 +111,7 @@ async def test_get_document_notebook(rtc_create_notebook, jp_serverapp, copy):
     )
     nb_content = nbformat.writes(nb, version=4)
     path, _ = await rtc_create_notebook("test.ipynb", nb_content, store=True)
-    collaboration = jp_serverapp.web_app.settings["jupyter_server_ydoc"]
+    collaboration = jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"]
     document = await collaboration.get_document(
         path=path, content_type="notebook", file_format="json", copy=copy
     )
@@ -127,7 +127,7 @@ async def test_get_document_file_copy_is_independent(
     rtc_create_file, jp_serverapp, rtc_fetch_session
 ):
     path, content = await rtc_create_file("test.txt", "test", store=True)
-    collaboration = jp_serverapp.web_app.settings["jupyter_server_ydoc"]
+    collaboration = jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"]
     document = await collaboration.get_document(
         path=path, content_type="file", file_format="text", copy=True
     )

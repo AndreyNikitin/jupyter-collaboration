@@ -2776,9 +2776,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jupyter-collaboration-ui-tests@workspace:.":
+"jupyter-collaboration-ui-rename-tests@workspace:.":
   version: 0.0.0-use.local
-  resolution: "jupyter-collaboration-ui-tests@workspace:."
+  resolution: "jupyter-collaboration-ui-rename-tests@workspace:."
   dependencies:
     "@jupyterlab/galata": ^5.3.0
     "@jupyterlab/services": ^7.1.5

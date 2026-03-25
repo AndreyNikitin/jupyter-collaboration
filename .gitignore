@@ -130,5 +130,5 @@ docs/source/changelog.md
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-packages/docprovider/junit.xml
+packages/docprovider-rename/junit.xml
 .jupyter_ystore.db
