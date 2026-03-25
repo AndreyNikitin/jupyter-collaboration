@@ -1,11 +1,12 @@
 name: Tests
-on:
-  push:
-    branches: ["main"]
-  pull_request:
+on: workflow_dispatch
+# on:
+#   push:
+#     branches: ["main"]
+#   pull_request:
 
-  schedule:
-    - cron: "0 8 * * *"
+#   schedule:
+#     - cron: "0 8 * * *"
 
 jobs:
   # Run "pre-commit run --all-files --hook-stage=manual"

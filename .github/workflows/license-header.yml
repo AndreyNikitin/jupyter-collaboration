@@ -1,7 +1,8 @@
 name: Fix License Headers
 
-on:
-  pull_request_target:
+on: workflow_dispatch
+# on:
+#   pull_request_target:
 
 jobs:
   header-license-fix:
