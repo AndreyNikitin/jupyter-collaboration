@@ -53,9 +53,6 @@
     "watch:labextension": "jupyter labextension watch ."
   },
   "dependencies": {
-    "jupyter-collaboration-rename": "^4.2.1",
-    "jupyter-collaborative-drive-rename": "^4.2.1",
-    "jupyter-docprovider-rename": "^4.2.1",
     "@jupyter/ydoc": "^2.1.3 || ^3.0.0",
     "@jupyterlab/application": "^4.5.0",
     "@jupyterlab/apputils": "^4.5.0",
@@ -66,6 +63,9 @@
     "@jupyterlab/translation": "^4.5.0",
     "@jupyterlab/ui-components": "^4.5.0",
     "@lumino/widgets": "^2.7.0",
+    "jupyter-collaboration-rename": "^4.2.1",
+    "jupyter-collaborative-drive-rename": "^4.2.1",
+    "jupyter-docprovider-rename": "^4.2.1",
     "y-protocols": "^1.0.5",
     "y-websocket": "^1.3.15",
     "yjs": "^13.5.40"
