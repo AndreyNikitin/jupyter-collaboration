@@ -44,7 +44,7 @@ Source = "https://github.com/jupyterlab/jupyter-collaboration/tree/main/projects
 Issues = "https://github.com/jupyterlab/jupyter-collaboration/issues/new/choose"
 
 [tool.hatch.version]
-path = "jupyter_collaboration/_version.py"
+path = "jupyter_collaboration_rename/_version.py"
 
 [tool.check-wheel-contents]
 ignore = ["W002"]
