@@ -51,7 +51,7 @@ const TWO_SESSIONS_WARNING =
 
 export const rtcContentProvider: JupyterFrontEndPlugin<ICollaborativeContentProvider> =
   {
-    id: 'jupyter-docprovider-extension-rename:content-provider',
+    id: 'docprovider-extension-rename:content-provider',
     description: 'The RTC content provider',
     provides: ICollaborativeContentProvider,
     requires: [ITranslator],
@@ -98,7 +98,7 @@ export const rtcContentProvider: JupyterFrontEndPlugin<ICollaborativeContentProv
  * Plugin to register the shared model factory for the content type 'file'.
  */
 export const yfile: JupyterFrontEndPlugin<void> = {
-  id: 'jupyter-docprovider-extension-rename:yfile',
+  id: 'docprovider-extension-rename:yfile',
   description:
     "Plugin to register the shared model factory for the content type 'file'",
   autoStart: true,
@@ -123,7 +123,7 @@ export const yfile: JupyterFrontEndPlugin<void> = {
  * Plugin to register the shared model factory for the content type 'notebook'.
  */
 export const ynotebook: JupyterFrontEndPlugin<void> = {
-  id: 'jupyter-docprovider-extension-rename:ynotebook',
+  id: 'docprovider-extension-rename:ynotebook',
   description:
     "Plugin to register the shared model factory for the content type 'notebook'",
   autoStart: true,
@@ -173,7 +173,7 @@ export const ynotebook: JupyterFrontEndPlugin<void> = {
  * A plugin to add a timeline slider status item to the status bar.
  */
 export const statusBarTimeline: JupyterFrontEndPlugin<void> = {
-  id: 'jupyter-docprovider-extension-rename:statusBarTimeline',
+  id: 'docprovider-extension-rename:statusBarTimeline',
   description: 'Plugin to add a timeline slider to the status bar',
   autoStart: true,
   requires: [IStatusBar, ICollaborativeContentProvider],
@@ -280,7 +280,7 @@ export const statusBarTimeline: JupyterFrontEndPlugin<void> = {
  * The default collaborative drive provider.
  */
 export const logger: JupyterFrontEndPlugin<void> = {
-  id: 'jupyter-docprovider-extension-rename:logger',
+  id: 'docprovider-extension-rename:logger',
   description: 'A logging plugin for debugging purposes.',
   autoStart: true,
   optional: [ILoggerRegistry, IEditorTracker, INotebookTracker, ITranslator],

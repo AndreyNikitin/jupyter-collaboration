@@ -1,5 +1,5 @@
 {
-  "name": "jupyter-docprovider-extension-rename",
+  "name": "docprovider-extension-rename",
   "version": "4.2.1",
   "description": "JupyterLab - Collaborative Shared Models",
   "keywords": [
@@ -83,7 +83,7 @@
   "typedoc": {
     "entryPoint": "./src/index.ts",
     "readmeFile": "./README.md",
-    "displayName": "jupyter-docprovider-extension-rename",
+    "displayName": "docprovider-extension-rename",
     "tsconfig": "./tsconfig.json"
   },
   "jupyterlab": {

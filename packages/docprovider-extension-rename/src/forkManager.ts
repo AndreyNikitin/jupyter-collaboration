@@ -16,7 +16,7 @@ import {
 } from '@jupyterlab/application';
 
 export const forkManagerPlugin: JupyterFrontEndPlugin<IForkManager> = {
-  id: 'jupyter-docprovider-extension-rename:forkManager',
+  id: 'docprovider-extension-rename:forkManager',
   autoStart: true,
   requires: [ICollaborativeContentProvider],
   provides: IForkManagerToken,

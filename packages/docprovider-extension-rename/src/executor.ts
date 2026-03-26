@@ -15,7 +15,7 @@ import { INotebookCellExecutor, runCell } from '@jupyterlab/notebook';
 
 export const notebookCellExecutor: JupyterFrontEndPlugin<INotebookCellExecutor> =
   {
-    id: 'jupyter-docprovider-extension-rename:notebook-cell-executor',
+    id: 'docprovider-extension-rename:notebook-cell-executor',
     description:
       'Add notebook cell executor that uses REST API instead of kernel protocol over WebSocket.',
     autoStart: true,

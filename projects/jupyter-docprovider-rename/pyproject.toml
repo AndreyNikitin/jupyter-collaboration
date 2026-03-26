@@ -49,11 +49,11 @@ exclude = ["/.github", "/binder", "node_modules"]
 
 [tool.hatch.build.targets.sdist.force-include]
 "../../packages/docprovider-rename" = "packages/docprovider-rename"
-"../../packages/jupyter-docprovider-extension-rename" = "packages/jupyter-docprovider-extension-rename"
+"../../packages/docprovider-extension-rename" = "packages/docprovider-extension-rename"
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyter_docprovider_rename/labextension" = "share/jupyter/labextensions/jupyter-docprovider-extension-rename"
-"install.json" = "share/jupyter/labextensions/jupyter-docprovider-extension-rename/install.json"
+"jupyter_docprovider_rename/labextension" = "share/jupyter/labextensions/docprovider-extension-rename"
+"install.json" = "share/jupyter/labextensions/docprovider-extension-rename/install.json"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
