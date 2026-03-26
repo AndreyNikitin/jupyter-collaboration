@@ -1,6 +1,6 @@
 {
   "name": "jupyter-collaboration-rename",
-  "version": "4.2.2",
+  "version": "4.2.3",
   "description": "JupyterLab - Real-Time Collaboration Widgets",
   "homepage": "https://github.com/AndreyNikitin/jupyter-collaboration",
   "bugs": {
