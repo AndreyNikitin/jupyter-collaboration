@@ -2,13 +2,13 @@
   "name": "jupyter-docprovider-rename",
   "version": "4.2.1",
   "description": "JupyterLab - Document Provider",
-  "homepage": "https://github.com/jupyterlab/jupyter-collaboration",
+  "homepage": "https://github.com/AndreyNikitin/jupyter-collaboration",
   "bugs": {
-    "url": "https://github.com/jupyterlab/jupyter-collaboration/issues"
+    "url": "https://github.com/AndreyNikitin/jupyter-collaboration/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jupyterlab/jupyter-collaboration.git"
+    "url": "https://github.com/AndreyNikitin/jupyter-collaboration.git"
   },
   "license": "BSD-3-Clause",
   "author": "Project Jupyter",
