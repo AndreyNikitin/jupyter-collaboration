@@ -1,0 +1,56 @@
+{
+  "projects": {
+    "jupyter-collaborative-drive-rename": {
+      "root": "packages/jupyter-collaborative-drive-rename",
+      "targets": {
+        "build": {
+          "executor": "nx:run-script",
+          "options": {
+            "script": "build"
+          }
+        }
+      }
+    },
+    "docprovider-extension-rename": {
+      "root": "packages/docprovider-extension-rename",
+      "targets": {
+        "build": {
+          "executor": "nx:run-script",
+          "options": {
+            "script": "build"
+          }
+        }
+      }
+    },
+    "jupyter-collaboration-rename": {
+      "root": "packages/jupyter-collaboration-rename",
+      "targets": {
+        "build": {
+          "executor": "nx:run-script",
+          "options": {
+            "script": "build"
+          }
+        }
+      }
+    },
+    "jupyter-collaboration-extension-rename": {
+      "root": "packages/jupyter-collaboration-extension-rename",
+      "targets": {
+        "build": {
+          "executor": "nx:run-script",
+          "options": {
+            "script": "build"
+          }
+        }
+      }
+    }
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nx/workspace/tasks-runner",
+      "options": {
+        "cacheableOperations": ["build", "test", "lint"]
+      }
+    }
+  }
+}
