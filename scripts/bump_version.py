@@ -49,7 +49,7 @@ def increment_version(current, spec):
         else:
             spec += f"{curr.micro + 1}"
     elif spec == "dev":
-        if curr.is_devrelease:
+        if curr.dev:
             p, x = curr.dev
             spec = f"{curr.major}.{curr.minor}.{curr.micro}.dev{x + 1}"
         else:
