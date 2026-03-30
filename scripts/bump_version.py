@@ -69,6 +69,7 @@ def bump(force, skip_if_dirty, spec):
     status = run("git status --porcelain").strip()
     if len(status) > 0:
         if skip_if_dirty:
+            print("Git state is dirty, skipping version bump")
             return
         raise Exception("Must be in a clean git state with no untracked files")
 
