@@ -48,6 +48,12 @@ def increment_version(current, spec):
             spec += f"{curr.micro}"
         else:
             spec += f"{curr.micro + 1}"
+    elif spec == "dev":
+        if curr.is_devrelease:
+            p, x = curr.dev
+            spec = f"{curr.major}.{curr.minor}.{curr.micro}.dev{x + 1}"
+        else:
+            spec = f"{curr.major}.{curr.minor}.{curr.micro}.dev0"
     else:
         raise ValueError("Unknown version spec")
 
