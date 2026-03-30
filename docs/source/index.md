@@ -16,13 +16,13 @@ Editors are not collaborative by default; to activate it, install the extension
 Installation using mamba/conda:
 
 ```sh
-mamba install -c conda-forge jupyter-collaboration
+mamba install -c conda-forge jupyter-collaboration-rename
 ```
 
 Installation using pip:
 
 ```sh
-pip install jupyter-collaboration
+pip install jupyter-collaboration-rename
 ```
 
 The new collaborative editing feature enables collaboration in real-time

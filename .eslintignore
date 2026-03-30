@@ -14,7 +14,8 @@ tests
 .eslintrc.js
 jupyter-config
 jupyter_collaboration
+jupyter_collaboration_rename
 
-packages/collaboration/babel.config.js
-packages/docprovider/babel.config.js
-packages/docprovider/jest.config.js
+packages/collaboration-rename/babel.config.js
+packages/docprovider-rename/babel.config.js
+packages/docprovider-rename/jest.config.js

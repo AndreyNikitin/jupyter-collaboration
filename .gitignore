@@ -125,10 +125,11 @@ docs/source/changelog.md
 
 .pnp.*
 .yarn/
+.nx
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-packages/docprovider/junit.xml
+packages/docprovider-rename/junit.xml
 .jupyter_ystore.db

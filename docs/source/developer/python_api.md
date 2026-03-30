@@ -4,13 +4,13 @@
 
 # Python API
 
-`jupyter_server_ydoc` instantiates {any}`YDocExtension` and stores it under `serverapp.settings` dictionary, under the `"jupyter_server_ydoc"` key.
+`jupyter_server_ydoc_rename` instantiates {any}`YDocExtension` and stores it under `serverapp.settings` dictionary, under the `"jupyter_server_ydoc_rename"` key.
 This instance can be used in other extensions to access the public API methods.
 
 For example, to access a read-only view of the shared notebook model in your jupyter-server extension, you can use the {any}`get_document` method:
 
 ```python
-collaboration = serverapp.settings["jupyter_server_ydoc"]
+collaboration = serverapp.settings["jupyter_server_ydoc_rename"]
 document = collaboration.get_document(
     path='Untitled.ipynb',
     content_type="notebook",
@@ -22,13 +22,13 @@ content = document.get()
 ## API Reference
 
 ```{eval-rst}
-.. automodule:: jupyter_server_ydoc.app
+.. automodule:: jupyter_server_ydoc_rename.app
   :members:
   :inherited-members:
 ```
 
 ```{eval-rst}
-.. automodule:: jupyter_server_ydoc.handlers
+.. automodule:: jupyter_server_ydoc_rename.handlers
   :members:
   :inherited-members:
 ```

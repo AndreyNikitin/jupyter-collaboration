@@ -48,9 +48,16 @@ def increment_version(current, spec):
             spec += f"{curr.micro}"
         else:
             spec += f"{curr.micro + 1}"
+    elif spec == "dev":
+        if curr.dev:
+            p, x = curr.dev
+            spec = f"{curr.major}.{curr.minor}.{curr.micro}.dev{x + 1}"
+        else:
+            spec = f"{curr.major}.{curr.minor}.{curr.micro}.dev0"
     else:
         raise ValueError("Unknown version spec")
 
+    print(f"Increment version from {current} to {spec}")
     return spec
 
 
@@ -100,11 +107,11 @@ def bump(force, skip_if_dirty, spec):
         project = version_file.parent.name
         project_pins[project] = version_spec
 
-    # bump the required version in jupyter-collaboration metapackage
+    # bump the required version in jupyter-collaboration-rename metapackage
     # to ensure that users can just upgrade `jupyter-collaboration`
     # and get all fixes for free.
     # Formatting based on https://stackoverflow.com/questions/70721025/tomlkit-nicely-formatted-array-with-inline-tables
-    metapackage = "jupyter-collaboration"
+    metapackage = "jupyter-collaboration-rename"
     metapackage_toml_path = HERE / "projects" / metapackage / "pyproject.toml"
     metapackage_toml = tomlkit.parse(metapackage_toml_path.read_text())
     old_dependencies = metapackage_toml.get("project").get("dependencies")

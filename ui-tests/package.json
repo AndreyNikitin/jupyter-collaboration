@@ -1,5 +1,5 @@
 {
-  "name": "jupyter-collaboration-ui-tests",
+  "name": "jupyter-collaboration-ui-rename-tests",
   "version": "1.0.0",
   "description": "Jupyter collaboration Integration Tests",
   "private": true,

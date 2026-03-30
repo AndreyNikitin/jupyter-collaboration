@@ -144,7 +144,7 @@ async def test_room_handler_doc_client_should_stop_file_watcher(
 ):
     path, _ = await rtc_create_file("test.txt", "test")
     fim = jp_serverapp.web_app.settings["file_id_manager"]
-    file_loaders = jp_serverapp.web_app.settings["jupyter_server_ydoc"].file_loaders
+    file_loaders = jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"].file_loaders
 
     event = Event()
 
@@ -195,7 +195,7 @@ async def test_room_handler_doc_client_should_stop_file_watcher(
     # After the cleanup delay, the file watcher should be done
     assert file_watcher.done()
 
-    await jp_serverapp.web_app.settings["jupyter_server_ydoc"].stop_extension()
+    await jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"].stop_extension()
     del jp_serverapp.web_app.settings["file_id_manager"]
 
 
@@ -219,7 +219,7 @@ async def test_room_handler_doc_client_should_cleanup_room_file(
         await sleep(0.1)
 
     # kill websocketserver to mimic task group inactive failure
-    await jp_serverapp.web_app.settings["jupyter_server_ydoc"].ywebsocket_server.stop()
+    await jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"].ywebsocket_server.stop()
 
     listener_was_called = False
     collected_data = []
@@ -276,7 +276,7 @@ async def test_room_handler_doc_client_should_cleanup_room_file(
     assert collected_data[3]["action"] == "clean"
     assert collected_data[3]["msg"] == "file loader removed."
 
-    await jp_serverapp.web_app.settings["jupyter_server_ydoc"].stop_extension()
+    await jp_serverapp.web_app.settings["jupyter_server_ydoc_rename"].stop_extension()
     del jp_serverapp.web_app.settings["file_id_manager"]
 
 

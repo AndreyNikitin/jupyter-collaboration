@@ -18,3 +18,10 @@ Input appropriate specifier into the `jupyter-releaser` workflow dispatch dialog
 | `release` | x.y.z.b1-> x.y.z.rc0  | All a.b.c-beta.1 -> a.b.c-rc.0     |
 | `release` | x.y.z.rc0-> x.y.z     | All a.b.c-rc0 -> a.b.c             |
 | `patch`   | x.y.z -> x.y.(z+1)    | Changed a.b.c -> a.b.(c+1)         |
+
+## Version update
+`build` replaced with `next`
+patch to alpha version is set manually
+
+python version naming is `x.y.za0`
+

@@ -1,9 +1,9 @@
 {
   "entryPointStrategy": "packages",
   "entryPoints": [
-    "packages/collaboration",
-    "packages/collaborative-drive",
-    "packages/docprovider"
+    "packages/collaboration-rename",
+    "packages/collaborative-drive-rename",
+    "packages/docprovider-rename"
   ],
   "externalSymbolLinkMappings": {
     "@codemirror/state": {
