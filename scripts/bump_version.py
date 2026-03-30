@@ -57,6 +57,7 @@ def increment_version(current, spec):
     else:
         raise ValueError("Unknown version spec")
 
+    print(f"Increment version from {current} to {spec}")
     return spec
 
 
